@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    background-image: url("main_background.jpg");
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header_color {
+    background: #E5E5E5;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.menu__logo {
+    font: 26px/26px 'Lora';
+    color: #FFFFFF;
+}
+.menu__logo_color {
+    color: #2E2E2E;
+}
+.navigation {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.navigation__unit {
+    height: 20px;
+    text-transform: uppercase;
+    font: 12px/20px 'Oxygen';
+    color: #FFFFFF;
+}
+.navigation__unit_black {
+    color: #2E2E2E;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.intro__title {
+    width: 498px;
+    height: 51px;
+    font: 50px/51px 'Lora';
+    color: #FFFFFF;
+    margin: 0;
+}
+.intro__title_color {
+    color: #2E2E2E;
+}
+.intro__subhead {
+    width: 504px;
+    height: 20px;
+    font: 17px/20px 'Oxygen';
+    color: rgba(255, 255, 255, 0.63);
+}
+.intro__subhead_color {
+    color: #2E2E2E;
+}
+.intro__button {
+    font: 13px/20px 'Oxygen';
+    color: #FFFFFF;
+    background-color: #DD783F;
+    border-radius: 3px;
+    padding: 12px 31px;
+}
+.article-image {
+    background-size: cover;
+}
+.section {
+    display: flex;
+    background: #F7F7F7;
+    font: 14px/35px 'Oxygen';
+    color: #101315;
+    height: 1320px;
+    flex-direction: column;
+}
+.section__categories {
+    height: 65px;
+    display: flex;
+    background: #FFFFFF;
+    font: 14px/20px 'Lora';
+    color: #768088;
+    justify-content: center;
+    align-items: center;
+}
+.nav__categories {
+    display: flex;
+    justify-content: space-between;
+    width: 840px;    
+}
+.nav__category {
+    font: 14px/20px 'Lora';
+    color: #768088;
+}
+.section__featured-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__most-recent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.section__title {
+    font: 20px/27px 'Oxygen';
+    letter-spacing: 2px;
+    color: #2E2E2E;
+    padding: 0px 16px 16px 16px;
+    border-bottom: 1px solid #DEDEDE
+}
+.featured-posts {
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+}
+.most-recent {
+    display: flex;
+    width: 940px;
+    height: 650px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.featured-posts__article {
+    height: 280px;
+    width: 460px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-size: cover;
+}
+.featured-posts__article_first {
+    background-image: url("The_Road_Ahead.jpg");
+}
+.featured-posts__article_second {
+    background-image: url("From_Top_Down.jpg");   
+}
+.featured-posts__title {
+    font: 27px/30px 'Lora';
+}
+.featured-posts__text {
+    font: 14px/25px 'Oxygen';
+}
+.featured-posts__categories {
+    text-transform: uppercase;
+    font: 12px/13px 'Oxygen';
+    color: #FFFFFF;
+    background-color: #DD783F;
+    padding: 6px 9px;
+    height: 26px;
+    width: 86px;
+}
+.featured-posts__signature {
+    display: flex;
+}
+.signature__text {
+    font: 12px/35px 'Oxygen';
+}
+.most-recent__article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 296px;
+    width: 291px;
+    background: #FFFFFF;
+}
+.most-recent__title {
+    font: 16px/21px 'Lora';
+    color: #101315;
+    padding: 0px 13px;
+}
+.most-recent__text {
+    font: 13px/19px 'Oxygen';
+    color: #7A7A7A;
+    padding: 0px 13px;
+}
+.most-recent_signature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 13px;
+    border-top: 1px solid #EFEFEF;;
+}
+.footer {
+    background-image: url("footer_background.png");
+    background-size: cover;
+    height: 378px; 
+}
+.contact__title {
+    font: 25px/30px 'Oxygen';
+    font-family: 'Oxygen';
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #EFEFEF;
+}
+.contact__email {
+    border: none;
+    padding: 0px;
+    height: 50px;
+    width: 375px;
+    font: 12px/14px 'Oxygen';
+}
+.contact_button {
+    border: none;
+    padding: 0px;
+    height: 50px;
+    width: 125px;
+    font: 12px/14px 'Oxygen';
+    color: #F8F8F8;
+    background-color: rgba(255, 255, 255, 0.28);
+}
+.navigation__unit_color {
+    color: rgba(255, 255, 255, 0.6);
+}
+
