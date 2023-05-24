@@ -5,7 +5,7 @@ a {
     text-decoration: none;
 }
 .header {
-    background-image: url("main_background.jpg");
+    background-image: url("../img/main_background.jpg");
     background-size: cover;
     height: 500px;
     display: flex;
@@ -76,7 +76,9 @@ a {
     color: #FFFFFF;
     background-color: #DD783F;
     border-radius: 3px;
-    padding: 12px 31px;
+    width: 87px;
+    padding: 6px 9px 7px 9px;
+    text-align: center;
 }
 .article__image {
     width: 100%;
@@ -97,6 +99,7 @@ a {
 }
 .section__categories {
     height: 65px;
+    width: 100%;
     display: flex;
     background: #FFFFFF;
     font: 14px/20px 'Lora';
@@ -156,12 +159,12 @@ a {
     justify-content: flex-end;
     background-size: cover;
 }
-.featured-posts__article_The-Road-Ahead {
-    background-image: url("The_Road_Ahead.jpg");
+.featured-post_first {
+    background-image: url("/static/img/The_Road_Ahead.jpg");
     margin-right: 10px;
 }
-.featured-posts__article_From-Top-Down {
-    background-image: url("From_Top_Down.jpg");
+.featured-post_second {
+    background-image: url("/static/img/From_Top_Down.jpg");
     margin-left: 10px;
     display: flex;   
     justify-content: space-between;
@@ -169,6 +172,7 @@ a {
 .featured-posts__title {
     font: 27px/30px 'Lora';
     margin-bottom: 6px;
+    color: #FFFFFF;
 }
 .featured-posts__text {
     font: 14px/25px 'Oxygen';
@@ -224,7 +228,7 @@ a {
     border-top: 1px solid #EFEFEF;;
 }
 .footer {
-    background-image: url("footer_background.png");
+    background-image: url("../img/footer_background.png");
     background-size: cover;
     height: 378px;
     display: flex;

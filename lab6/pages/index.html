@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Lets do it together</title>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+        <link href="https://fonts.google.com/specimen/Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="menu">
+                <a href="#" class="menu__logo">Escape.</a>
+                <nav class="navigation">
+                    <a href="#" class="navigation__unit">home</a>
+                    <a href="#" class="navigation__unit">categories</a>
+                    <a href="#" class="navigation__unit">about</a>
+                    <a href="#" class="navigation__unit">contact</a>
+                </nav>
+            </div>
+            <div class="intro">
+                <h1 class="intro__title">Let's do it together</h1>
+                <p class="intro__subhead">We travel the world in search of stories. Come along for the ride.</p>
+                <a href="#" class="intro__button">View Latest Posts</a>
+            </div>
+
+        </header>
+        <section class="section">
+            <div class="section__categories">
+                <nav class="nav__categories">
+                    <a href="#"  class="nav__category">Nature</a>
+                    <a href="#"  class="nav__category">Photography</a>
+                    <a href="#"  class="nav__category">Relaxation</a>
+                    <a href="#"  class="nav__category">Vacation</a>
+                    <a href="#"  class="nav__category">Travel</a>
+                    <a href="#"  class="nav__category">Adventure</a>
+                </nav> 
+            </div>  
+            <div class="section__featured-posts">
+                <h2 class="section__title">Featured Posts</h2>
+                <div class="featured-posts">
+                    {{ range .FeaturedPosts }}
+                    <article class="featured-posts__article featured-posts__article_The-Road-Ahead {{ .ImgModifier }}">
+                        {{ if .Category }}
+                        <span class="intro__button">Adventure</span>
+                        {{ end }}
+                        <div class="featured-post__container">
+                            <a href="/post" class="featured-posts__title">{{ .Title }}</a>
+                            <p class="featured-posts__text">{{ .Subtitle }}</p>
+                            <div class="featured-posts__signature">
+                                <div class="signature">
+                                    <img src = "{{ .AuthorImg }}" alt = "{{ .Author }}"> 
+                                    <span class="signature__name">{{ .Author }}</span>
+                                </div>
+                                <span class="signature__data">{{ .PublishDate }}</span>
+                            </div>  
+                        </div>    
+                    </article>
+                    {{ end }} 
+                </div>
+            </div>
+            <div class="section__most-recent">
+                <h2 class="section__title">Most Recent</h2>
+                <div class="most-recent">
+                    {{ range .MostRecentPosts }}
+                    <article class="most-recent__article">
+                        <img src = "{{ .Image }}" alt = "Nature">
+                        <h4 class="most-recent__title">{{ .Title }}</h4>
+                        <p class="most-recent__text">{{ .Subtitle }}</p>
+                        <div class="most-recent_signature">
+                            <div class="signature">
+                                <img src = "{{ .AuthorImg }}" alt = "{{ .Author }}">
+                                <span class="signature__name">{{ .Author }}</span>
+                            </div>
+                            <span class="signature__data">{{ .PublishDate }}</span>
+                        </div>   
+                    </article>
+                    {{ end }}
+                </div>   
+            </div>
+        </section>
+        <footer class="footer">
+            <form class="contact">
+                <label class="contact__title" for="email">
+                    Stay in Touch
+                </label>
+                <div class="contact__fields">
+                    <input class="contact__email" id="email" type="email" placeholder="Enter your email address">
+                    <button class="contact_button" type="submit">Submit</button>
+                </div>
+            </form>
+            <div class="menu menu_color">
+                <span class="menu__logo">Escape.</span>
+                <nav class="navigation">
+                    <a class="navigation__unit navigation__unit_color" href="#">home</a>
+                    <a class="navigation__unit navigation__unit_color" href="#">categories</a>
+                    <a class="navigation__unit navigation__unit_color" href="#">about</a>
+                    <a class="navigation__unit navigation__unit_color" href="#">contact</a>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
